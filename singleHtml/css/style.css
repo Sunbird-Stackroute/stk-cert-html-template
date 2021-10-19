@@ -1,0 +1,206 @@
+/** @format */
+
+@import "../fonts/noto/fonts.css";
+
+@font-face {
+	font-family: "july_seventhregular";
+	src: url("../fonts/july-seventh/july_seventh_regular-webfont.eot");
+	src: url("../fonts/july-seventh/july_seventh_regular-webfont.eot?#iefix") format("embedded-opentype"),
+		url("../fonts/july-seventh/july_seventh_regular-webfont.woff2") format("woff2"),
+		url("../fonts/july-seventh/july_seventh_regular-webfont.woff") format("woff"),
+		url("../fonts/july-seventh/july_seventh_regular-webfont.ttf") format("truetype"),
+		url("../fonts/july-seventh/july_seventh_regular-webfont.svg#july_seventhregular") format("svg");
+	font-weight: normal;
+	font-style: normal;
+}
+
+html,
+body {
+	font-size: 16px;
+	height: 100%;
+}
+
+*,
+body {
+	font-family: "Noto Sans", "Noto Sans Devanagari", "Noto Sans Tamil", "Noto Sans Bengali", "Noto Sans Malayalam", "Noto Sans Gurmukhi",
+		"Noto Sans Gujarati", "Noto Sans Telugu", "Noto Sans Kannada", "Noto Sans Oriya", "Noto Nastaliq Urdu", -apple-system,
+		BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+	padding: 0;
+	margin: 0;
+	outline: none;
+}
+
+/* strong { */
+/* font-family: 'Noto Sans Bold', 'Noto Sans Gujarati Bold'; */
+/* } */
+
+.sb-certificate-table-ct {
+	padding: 0px;
+	width: 100%;
+	/*min-width: 842px;
+	max-width: 100%;*/
+	height: 100%;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.sb-certificate-table {
+	width: 100%;
+	height: 100%;
+	position: relative;
+	background: #fff;
+}
+
+.state-outline-img {
+	/*    width: 65%;
+    height: auto;*/
+	width: auto;
+	height: 520px;
+	position: absolute;
+	z-index: 2;
+	padding: 0px 0px;
+	box-sizing: border-box;
+	margin: 0 auto;
+	left: 0px;
+	top: 50%;
+	right: 0px;
+	transform: translateY(-52%);
+}
+
+.certificate-frame {
+	background-color: #fffaf4;
+	width: 100%;
+
+	/* height:100%; */
+	height: 97%;
+
+	position: absolute;
+	z-index: 2;
+	box-sizing: border-box;
+	left: 0px;
+	top: 0px;
+	right: 0px;
+	margin: 0 auto;
+}
+
+.sb-certificate-container {
+	position: absolute;
+	z-index: 2;
+	width: 85%;
+	margin: 0px auto 0 auto;
+	/* height: 100%; */
+	left: 0;
+	right: 0;
+	/* border: 2px red solid; */
+}
+
+/* .state-symbol img {
+	height: 100px;
+	margin-top: 16px;
+} */
+
+.state-name {
+	color: #333333;
+	font-size: 20px;
+	line-height: 1.4;
+	width: 75%;
+	margin: 8px auto 0px auto;
+}
+/* .sb-certificate-header {
+	margin-top: 80px
+} */
+
+.sb-certificate-header h1 {
+	color: #77482d;
+	font-weight: inherit;
+	font-size: 48px;
+	line-height: 72px;
+	font-family: "july_seventhregular", "Noto Sans", "Noto Sans Devanagari", "Noto Sans Tamil", "Noto Sans Bengali", "Noto Sans Malayalam",
+		"Noto Sans Gurmukhi", "Noto Sans Gujarati", "Noto Sans Telugu", "Noto Sans Kannada", "Noto Sans Oriya", "Noto Nastaliq Urdu",
+		-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue";
+	margin-bottom: 32px;
+}
+
+.certificate-details {
+	color: #333333;
+	font-size: 22px;
+	/* line-height: 36px; */
+	line-height: 27px;
+	text-align: center;
+	width: 75%;
+	margin: 0 auto;
+	/* margin-bottom:140px; */
+	margin-top: 24px;
+}
+.sb-certificate-footer {
+	margin-top: 20px;
+	margin-bottom:20px;
+	text-align: center;
+}
+.sb-certificate-footer div {
+	flex: 33.3333%;
+}
+.sb-certificate-footer .country-symbol {
+	text-align: left;
+	color: #999999;
+	margin-left: 9%;
+}
+.country-symbol img {
+	width: 250px;
+}
+
+.sb-certificate-footer .country-symbol p {
+	font-size: 12px;
+	margin-top: 5px;
+}
+
+.sb-certificate-footer .state-sign p {
+	/*font-family: 'noto_sansitalic';*/
+	font-style: italic;
+	font-size: 14px;
+}
+.sb-certificate-footer .state-sign div.sign-line {
+	width: 75%;
+	margin: 0px auto 4px auto;
+	height: 1px;
+	background: #999;
+}
+.sb-certificate-footer .certificate-qr-code {
+	text-align: center;
+}
+
+.sb-certificate-footer .certificate-qr-code p {
+	color: #333333;
+	font-size: 14px;
+	line-height: 18px;
+	margin-top: 0px;
+}
+hr.sign-line {
+	border: 0px;
+	border-bottom: 1px solid #999;
+	width: 50%;
+	margin: 0 auto;
+	margin-bottom: 5px;
+}
+
+@page {
+	margin: 24px 24px 0px 24px;
+	size: landscape;
+	size: 297mm 215mm;
+}
+
+.singleLogo {
+	width: 90%;
+	height: 40%;
+	margin-top: 30px;
+}
+.qrImage {
+
+	margin-top: 100px;
+}
+.sigImage{
+	margin-top:10px;
+}
+.allign-footer{
+	margin-top:10px;
+}
