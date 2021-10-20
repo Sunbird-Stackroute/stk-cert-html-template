@@ -133,8 +133,9 @@ body {
 	margin-top: 24px;
 }
 .sb-certificate-footer {
-	margin-top: 20px;
-	margin-bottom:20px;
+	/* margin-top: 20px; */
+	margin-top: 10px;
+
 	text-align: center;
 }
 .sb-certificate-footer div {
@@ -190,17 +191,24 @@ hr.sign-line {
 }
 
 .singleLogo {
-	width: 90%;
-	height: 40%;
-	margin-top: 30px;
+	width: 50vw;
+	/* height: 40%;
+	margin-top: 30px; */
 }
 .qrImage {
-
-	margin-top: 100px;
+	width: 70px;
+	/* margin-top: 25px; */
+	margin-top: 20px;
 }
-.sigImage{
-	margin-top:10px;
+.sigImage {
+	/* margin-top: 10px; */
+	margin-top: 5px;
 }
-.allign-footer{
-	margin-top:10px;
+.allign-footer {
+	margin-top: 10px;
+}
+.allign-content {
+	/* margin-top: 15px; */
+	margin-top: 10px;
+	line-height: 30px;
 }
