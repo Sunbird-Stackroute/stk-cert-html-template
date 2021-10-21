@@ -212,3 +212,124 @@ hr.sign-line {
 	margin-top: 10px;
 	line-height: 30px;
 }
+
+/* ********************************************************************************** */
+
+.flex-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.certificate-main {
+	display: flex;
+	flex-direction: row;
+	max-width: 75%;
+	margin: auto;
+	margin-top: 10px;
+	justify-content: space-around;
+	align-items: flex-start;
+	background-color: #0099ff;
+	padding: 20px;
+}
+.emptydiv {
+	width: 30%;
+	height: auto;
+}
+
+.badge-title-flex-container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.logo {
+	max-width: 50%;
+}
+.logo > img {
+	width: 100%;
+}
+.title {
+	max-width: 90%;
+}
+.title > img {
+	width: 100%;
+}
+
+.qrcodetopcolumn {
+	width: 30%;
+	display: flex;
+	justify-content: flex-end;
+	align-items: flex-end;
+	/* height: auto; */
+}
+.qrcodeImageTop {
+	max-width: 40%;
+}
+
+.qrcodeImageTop > img {
+	width: 100%;
+}
+
+.narrative {
+	padding-left: 12%;
+	padding-right: 12%;
+	/* background-image: url(images/sr_bg_3.png); */
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 80%;
+	margin-top: 20px;
+}
+.narrative > p {
+	font-size: 1.5em;
+	font-family: "Open Sans Light";
+	line-height: 1.5;
+	text-align: center;
+}
+.sign-logo-wrapper {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-bottom: 40px;
+	position: fixed;
+	bottom: 10px;
+}
+.qrcodeImage {
+	max-width: 35%;
+}
+
+.qrcodeImage > img {
+	width: 100%;
+	border: 1px solid;
+}
+.stacksignlogo {
+	display: flex;
+	margin-top: 23px;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: flex-start;
+}
+.sign {
+	width: 190px;
+}
+
+.sign > img {
+	width: 100%;
+	height: auto;
+}
+
+.company-logo-stack {
+	max-width: 160px;
+}
+
+.company-logo-stack > img {
+	width: 100%;
+	margin-top: 11px;
+	height: auto;
+}
+
+.verify-link {
+	position: fixed;
+	bottom: 20px;
+	font-size: 0.6em;
+}

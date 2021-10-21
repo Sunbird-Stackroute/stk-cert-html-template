@@ -18,6 +18,9 @@ html,
 body {
 	font-size: 16px;
 	height: 100%;
+
+	/* background: transparent url("dualHtml/images/sr_bg_3.png") no-repeat scroll; */
+	/* opacity: 0.5; */
 }
 
 *,
@@ -69,7 +72,7 @@ body {
 }
 
 .certificate-frame {
-	background-color: #fffaf4;
+	/* background-color: #fffaf4; */
 	width: 100%;
 
 	/* height:100%; */
@@ -82,6 +85,7 @@ body {
 	top: 0px;
 	right: 0px;
 	margin: 0 auto;
+	opacity: 0.5;
 }
 
 .sb-certificate-container {
@@ -124,18 +128,18 @@ body {
 	margin-bottom: 32px;
 }
 
-.certificate-details {
+/* .certificate-details {
 	color: #333333;
 	font-size: 20px;
-	/* line-height: 36px; */
+
 	line-height: 40px;
 	text-align: center;
 	width: 75%;
 	margin: 0 auto;
-	/* margin-bottom:140px; */
+
 	margin-top: 24px;
-	/* border: 2px green solid; */
-}
+
+} */
 .sb-certificate-footer {
 	margin-top: 10px;
 	text-align: center;
@@ -204,6 +208,8 @@ hr.sign-line {
 
 .dualLogo {
 	width: 60vw;
+	position: relative;
+	z-index: 4;
 	/* height: 40%; */
 	/* margin-top: 10px; */
 }
@@ -214,4 +220,167 @@ hr.sign-line {
 .qrImage {
 	width: 70px;
 	margin-top: 25px;
+}
+/*
+.sb-certificate-table-ct::before {
+	opacity: 0.5;
+} */
+
+.header-container {
+	background-color: #f56a4c;
+}
+.title-img {
+	border: 2px black solid;
+}
+.gradecap {
+	border: 2px yellow solid;
+	width: 14%;
+	margin: auto;
+}
+
+/* ****************************************** */
+
+.flex-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.certificate-main {
+	display: flex;
+	flex-direction: row;
+	max-width: 75%;
+	margin: auto;
+	margin-top: 10px;
+	justify-content: space-around;
+	align-items: flex-start;
+	background-color: #f56a4c;
+	padding: 20px;
+}
+.emptydiv {
+	width: 30%;
+	height: auto;
+}
+.badge-title-flex-container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.logo {
+	max-width: 50%;
+}
+.logo > img {
+	width: 100%;
+}
+
+.title {
+	max-width: 90%;
+}
+.title > img {
+	width: 100%;
+}
+.qrcodetopcolumn {
+	width: 30%;
+	display: flex;
+	justify-content: flex-end;
+	align-items: flex-end;
+	/* height: auto; */
+}
+
+.qrcodeImageTop {
+	max-width: 40%;
+}
+
+.qrcodeImageTop > img {
+	width: 100%;
+}
+
+.narrative {
+	padding-left: 12%;
+	padding-right: 12%;
+	/* background-image: url(../images/sr_bg_3.png); */
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 75%;
+	margin-top: 20px;
+
+	/* bottom: 0; */
+}
+
+.sign-logo-wrapper {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	margin-bottom: 80px;
+	position: fixed;
+	bottom: 10px;
+	/* border: 1px solid black; */
+}
+.stacksignlogo {
+	display: flex;
+	width: 45%;
+	/* margin-right: 40px; */
+	/* margin-top: 15px; */
+	/* padding-top: 2px; */
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: space-around;
+	/* border: 1px solid black; */
+}
+.sign {
+	width: 210px;
+	/* border: 1px solid black; */
+}
+
+.sign > img {
+	width: 130%;
+	height: auto;
+}
+.company-logo-stack {
+	max-width: 130px;
+	/* padding-top: 10px; */
+
+	margin-bottom: 20px;
+	margin-left: 5px;
+	/* border: 1px solid black; */
+}
+.company-logo-stack > img {
+	width: 100%;
+	height: auto;
+}
+
+.qrcodeImage {
+	align-self: flex-start;
+	max-width: 10%;
+}
+.qrcodeImage > img {
+	width: 100%;
+}
+.issuersignlogo {
+	display: flex;
+	/* border: 1px solid black; */
+	/* margin-top: 10px; */
+	flex-direction: column;
+	width: 40%;
+	align-items: flex-end;
+	justify-content: flex-end;
+}
+.company-logo {
+	max-width: 170px;
+	/* border: 1px solid black; */
+	margin-right: 24px;
+	padding-right: 40px;
+}
+.company-logo > img {
+	width: 100%;
+	height: auto;
+	/* border: 1px solid black; */
+}
+.verify-link {
+	/* position: fixed; */
+	position: fixed;
+	bottom: 20px;
+	font-size: 0.6em;
 }

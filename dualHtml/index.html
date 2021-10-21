@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html lang="en">
 
 <head>
@@ -12,83 +13,82 @@
         href="css/style.css"
         rel="stylesheet"
     >
+</head>
 
 <body>
-    <!-- Certificate of completion-->
 
-    <div class="sb-certificate-table-ct">
-        <!-- <img
-            src="./images/white_bg.jpg"
-            class="certificate-frame"
-        /> -->
-        <!--<img src="./images/certificate-frame-blue.svg" class="certificate-frame"/>-->
+    <div class="flex-container">
+        <div class="certificate-main">
 
-        <div>
-            <div>
+            <div class="emptydiv"></div>
+            <div class="badge-title">
+                <div class="badge-title-flex-container">
 
-                <div>
-                    <img
-                        src="./images/dualLogo.png"
-                        class="dualLogo"
-                        alt="Logo"
-                    >
+                    <div class="logo">
+                        <img src="./images/gradcap.png">
+                    </div>
+
+                    <div class="title">
+                        <img src="images/title.png">
+                    </div>
+
                 </div>
+            </div>
+            <div class="qrcodetopcolumn">
+                <div class="qrcodeImageTop">
+                    <img src="./images/qrcode.png">
+                </div>
+            </div>
 
-                <!-- <h1>Certificate of Participation</h1> -->
+        </div>
+        <div class="narrative">
+            <img src="./images/sr_bg_3.png" />
 
+            <!-- <p>This is to certify that</p>
+            <p> John Doe</p>
+            <p>Has successfully completed the NIIT - Canada 12-week</p>
+            <p>Java Full Stack Development Program on</p>
+            <p>September 10, 2021.</p> -->
+
+        </div>
+
+        <div class="sign-logo-wrapper">
+
+            <div class="stacksignlogo">
+                <div class="sign">
+                    <img src="./images/sign-dir.png">
+                    <!-- <strong>DJ Chadha</strong><br>Executive Vice President and Global Head, Operations<br> NIIT Learning Solutions
+                    Limited -->
+
+                </div>
+                <div class="company-logo-stack">
+                    <img src="./images/niitlogo.png">
+                </div>
             </div>
-            <div class="allign-content">
-                <p>$courseMessage</p>
-                <!-- <br> -->
-                <h2><strong>$recipientName</strong></h2>
-                <!-- <br> -->
-                <p>$courseDescription</p>
-                <h2><strong>$courseDate</strong></h2>
+            <div class="qrcodeImage">
+                <img src="./images/qrcode.png">
             </div>
-            <div>
-                <img
-                    class="qrImage"
-                    src="./images/qrcode.png"
-                >
-            </div>
-            <div class="signature-allign">
-                <div>
-                    <p>
-                        <strong>DJ Chadha</strong><br>Executive Vice President and Global Head, Operations<br> NIIT Learning Solutions
-                        Limited
-                        (Canada)
-                    </p>
+            <div class="issuersignlogo">
+                <div class="sign">
                     <img
-                        src="./images/niit-logo.png"
-                        height="100"
-                        width="200"
+                        src="./images/sign-dir.png"
+                        alt="Sign"
                     />
 
-                </div>
-                <div>
-                    <p>
-                        <strong>Edgar Aranha</strong><br>Vice President, Human Resources
-                    </p>
-                    <img
-                        src="./images/cgi.png"
-                        height="100"
-                        width="200"
-                    />
-
-                    <!--            <hr class="sign-line"/>-->
+                    <!-- <strong>Edgar Aranha</strong><br>Vice President, Human Resources -->
 
                 </div>
+                <div class="company-logo">
+                    <img src="./images/CGILogo.png">
+                </div>
             </div>
-            <div class="sb-certificate-footer">
-                <a
-                    href="http://localhost:5000/verify?url=http://localhost:8000/public/assertions/fBKtH5otTPS_jvPmMJJVeQ.json?v=1_1">http://localhost:5000/verify?url=http://localhost:8000/public/assertions/fBKtH5otTPS_jvPmMJJVeQ.json?v=1_1</a>
-
-            </div>
-
+        </div>
+        <div class="verify-link">
+            <!-- <a href="{{verifyUrl}}">{{verifyUrl}}</a> -->
+            <a
+                href="http://localhost:5000/verify?url=http://localhost:8000/public/assertions/fBKtH5otTPS_jvPmMJJVeQ.json?v=1_1">http://localhost:5000/verify?url=http://localhost:8000/public/assertions/fBKtH5otTPS_jvPmMJJVeQ.json?v=1_1</a>
         </div>
 
     </div>
 
 </body>
-
-</html>
