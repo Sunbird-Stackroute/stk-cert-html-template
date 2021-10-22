@@ -332,8 +332,8 @@ hr.sign-line {
 	max-width: 130px;
 	/* padding-top: 10px; */
 
-	margin-bottom: 20px;
-	margin-left: 5px;
+	/* margin-bottom: 20px; */
+	/* margin-left: 5px; */
 	/* border: 1px solid black; */
 }
 .company-logo-stack > img {
@@ -359,10 +359,10 @@ hr.sign-line {
 	justify-content: flex-end;
 }
 .company-logo {
-	max-width: 170px;
+	max-width: 130px;
 	/* border: 1px solid black; */
-	margin-right: 24px;
-	padding-right: 40px;
+	/* margin-right: 24px;
+	padding-right: 40px; */
 }
 .company-logo > img {
 	width: 100%;
