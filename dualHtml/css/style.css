@@ -297,26 +297,16 @@ hr.sign-line {
 	width: 100%;
 }
 
-.narrative {
-	padding-left: 12%;
-	padding-right: 12%;
-	/* background-image: url(../images/sr_bg_3.png); */
-	background-repeat: no-repeat;
-	background-position: center;
-	background-size: 75%;
-	margin-top: 20px;
-
-	/* bottom: 0; */
-}
-
 .sign-logo-wrapper {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
 	margin-bottom: 80px;
-	position: fixed;
-	bottom: 10px;
+	/* position: fixed; */
+	/* bottom: 10px; */
+	/* top: 10px; */
 	/* border: 1px solid black; */
+	margin-top: 60px;
 }
 .stacksignlogo {
 	display: flex;
@@ -352,8 +342,9 @@ hr.sign-line {
 }
 
 .qrcodeImage {
-	align-self: flex-start;
+	/* align-self: flex-start; */
 	max-width: 10%;
+	display: flex;
 }
 .qrcodeImage > img {
 	width: 100%;
@@ -380,7 +371,92 @@ hr.sign-line {
 }
 .verify-link {
 	/* position: fixed; */
-	position: fixed;
+	/* position: fixed; */
 	bottom: 20px;
 	font-size: 0.6em;
+}
+
+.narrative {
+	padding-left: 12%;
+	padding-right: 12%;
+	/* background-image: url(../images/sr_bg_3.png); */
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 75%;
+	margin-top: 20px;
+	position: relative;
+	/* bottom: 0; */
+}
+
+.first-text {
+	/* position: absolute;
+	top: 17px;
+
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	width: 80%; */
+
+	position: absolute;
+	top: 17px;
+	/* left: 480px; */
+	/* display: flex; */
+	/* flex-direction: column; */
+	width: 60%;
+	/* flex-wrap: nowrap; */
+	/* align-items: center; */
+	/* display: flex; */
+	/* justify-content: flex-start; */
+	/* border: 2px green solid; */
+	text-align: center;
+	margin: auto;
+	word-break: break-word;
+}
+
+@page {
+	size: A4;
+	margin: 10px 40px;
+}
+
+.height-100vh {
+	/* height: 100vh; */
+	display: flex; /* establish flex container */
+	flex-direction: column; /* stack flex items vertically */
+	position: relative;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 75%;
+	margin-top: 20px;
+	padding-left: 12%;
+	padding-right: 12%;
+}
+
+.center-aligned {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100%;
+	/* border: 2px red solid; */
+	margin-top: 60px;
+}
+.text {
+	/* position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%); */
+
+	position: absolute;
+	left: 50%;
+	/* top: 50%; */
+	top: 25%;
+	font-size: 24px;
+	transform: translate(-50%, -50%);
+	/* word-break: break-word; */
+	/* min-height: 60px; */
+	/* width: fit-content; */
+	text-align: center;
+	/* border: 2px black solid; */
+	max-height: 100%;
+	width: 60%;
+	word-break: break-word;
 }
