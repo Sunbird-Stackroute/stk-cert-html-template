@@ -1,154 +1,129 @@
-<!-- <!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="utf-8">
-    <meta
-        name="viewport"
-        content="width=device-width, initial-scale=1.0"
-    >
-    <title>Certificate</title>
-    <link
-        href="css/style.css"
-        rel="stylesheet"
-    >
-</head>
-<body>
-
-
-    <div class="sb-certificate-table-ct">
-
-
-        <div class="sb-certificate-container">
-            <div class="sb-certificate-header">
-                <div class="state-symbol">
-                    <img
-                        src="./images/singleLogo.png"
-                        class="singleLogo"
-                        alt="Logo"
-                    >
-                </div>
-
-            </div>
-
-
-            <div class="allign-content">
-                <p>$courseMessage</p>
-
-                <h2><strong>$recipientName</strong></h2>
-
-                <p>$courseDescription</p>
-                <h2><strong>$courseDate</strong></h2>
-            </div>
-
-            <div>
-                <img
-                    src="./images/qrcode.png"
-                    width="70"
-                    class="sb-certificatePage-logo qrImage"
-                />
-            </div>
-            <div class="sigImage">
-                <img
-                    src="./images/stackrouteSig.png"
-                    height="60"
-                    width="100"
-                    class="sb-certificatePage-logo"
-                />
-
-                <p><strong>Ramanujan Thirumalai</strong></p>
-                <p>Sr. VP, StackRoute</p>
-
-                <img
-                    src="./images/stack-route.png"
-                    height="100"
-                    width="200"
-                    class="allign-footer"
-                />
-            </div>
-            <div class="sb-certificate-footer">
-                <a
-                    href="http://localhost:5000/verify?url=http://localhost:8000/public/assertions/pB4CgdvlQaaZ120VQXrbpg.json?v=1_1">http://localhost:5000/verify?url=http://localhost:8000/public/assertions/pB4CgdvlQaaZ120VQXrbpg.json?v=1_1</a>
-
-            </div>
-        </div>
-
-    </div>
-
-    </div>
-</body>
-
-</html> -->
-
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Certificate</title>
+  </head>
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Khula&display=swap");
 
-<head>
-  <meta charset="utf-8">
-  <meta
-    name="viewport"
-    content="width=device-width, initial-scale=1.0"
-  >
-  <title>Certificate</title>
-  <link
-    href="css/style.css"
-    rel="stylesheet"
-  >
-</head>
+    body {
+      font-family: "Khula", sans-serif;
+      margin: 0;
+    }
 
-<body>
+    @media print {
+      @page {
+        size: A4 Portrait;
+        margin: 20px 50px;
+      }
+    }
+  </style>
+  <body style="height: 100vh">
+    <!-- Header-->
+    <section style="background: #0099ff; height: 350px">
+      <article style="display: flex; justify-content: space-between">
+        <div></div>
+        <img
+          src="./images/logos-all-01.png"
+          width="155"
+          height="220"
+          alt=""
+          style="position: relative; top: 20px; left: 23px"
+        />
+        <img
+          src="./images/qrcode.png"
+          width="36"
+          height="36"
+          alt=""
+          style="
+            position: relative;
+            top: 20px;
+            right: 20px;
+            border: 4px solid white;
+          "
+        />
+      </article>
+      <article style="display: flex; justify-content: center">
+        <img
+          src="./images/title.png"
+          alt=""
+          style="width: 400px; position: relative; top: 25px"
+        />
+      </article>
+    </section>
 
-  <div class="flex-container">
-    <div class="certificate-main">
+    <!-- Body -->
+    <section
+      class="watermark"
+      style="
+        margin: 5px 0 10px 0;
+        text-align: center;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        align-items: center;
+      "
+    >
+      <img src="./images/sr_bg_3.png" width="680" height="255" alt="" />
+      <span style="position: absolute; font-size: 26px; top: 16px">
+        <p>This is to certify</p>
+        <section style="line-height: 0.6">
+          <strong>John Doe</strong> has successfully completed the Java tech
+          stack
+          <p>covering UI-Angular-Java Spring-Microservices from</p>
+          <p>StackRoute on <strong>23-September-2020.</strong></p>
+          <!-- <p>
+            This is to certify that<br />
+            <strong>John Doe</strong><br />
+            has successfully completed the Post Graduate Program in Full Stack
+            Product Engineering conducted by StackRoute during the period 31 jul
+            2020 to 26 feb 2021 and after due assessment & evaluation by the
+            Academic Council of NIIT, is granted the title Stackroute Certified
+            Full Stack product Engineer in java and Angular technology Stack as
+            of<strong> 23-September-2020.</strong>
+          </p> -->
+        </section>
+      </span>
+    </section>
 
-      <div class="emptydiv"></div>
-      <div class="badge-title">
-        <div class="badge-title-flex-container">
-
-          <div class="logo">
-            <img src="./images/logos-all-01.png">
-          </div>
-
-          <div class="title">
-            <img src="./images/title.png">
-          </div>
-
-        </div>
-      </div>
-      <div class="qrcodetopcolumn">
-        <div class="qrcodeImageTop">
-          <img src="./images/qrcode.png">
-        </div>
-      </div>
-
-    </div>
-    <div class="narrative">
-      <img src="./images/sr_bg_3.png" />
-      <!-- <p>
-        {{narrative}}
-      </p> -->
-
-    </div>
-
-    <div class="sign-logo-wrapper">
-      <div class="qrcodeImage">
-        <img src="./images/qrcode.png">
-      </div>
-      <div class="stacksignlogo">
-        <div class="sign">
-          <img src="./images/sign-dir.png">
-        </div>
-        <div class="company-logo-stack">
-          <img src="images/Stack-route.png">
-        </div>
-      </div>
-
-    </div>
-    <div class="verify-link">
-      Verify from here: <a
-        href="http://localhost:5000/verify?url=http://localhost:8000/public/assertions/pB4CgdvlQaaZ120VQXrbpg.json?v=1_1">http://localhost:5000/verify?url=http://localhost:8000/public/assertions/pB4CgdvlQaaZ120VQXrbpg.json?v=1_1</a>
-    </div>
-
-  </div>
-
-</body>
+    <!-- Footer-->
+    <section style="display: flex; flex-direction: column; align-items: center">
+      <img
+        width="75"
+        height="75"
+        src="./images/qrcode.png"
+        style="top: 20px; left: 18px; margin-bottom: 25px; margin-top: 99px"
+        alt=""
+      />
+      <img
+        width="200"
+        height="125"
+        src="./images/sign-dir.png"
+        style="top: 20px; left: 18px; margin-bottom: -25px"
+        alt=""
+      />
+      <header>
+        <h5 style="margin-bottom: -10px">Ramanujam Thirumalai</h5>
+        <small style="font-size: 11px">Sr. VP, StackRoute</small>
+      </header>
+      <img
+        width="175"
+        height="75"
+        src="images/Stack-route.png"
+        style="top: 20px; left: 18px; margin-top: 5px"
+        alt=""
+      />
+      <small style="margin: 10px 0 0 0; font-size: 9px">
+        Verify from here:
+        <a
+          href="http://localhost:5000/verify?url=http://localhost:8000/public/assertions/pB4CgdvlQaaZ120VQXrbpg.json?v=1_1"
+          >http://localhost:5000/verify?url=http://localhost:8000/public/assertions/pB4CgdvlQaaZ120VQXrbpg.json?v=1_1</a
+        >
+      </small>
+    </section>
+  </body>
+</html>
