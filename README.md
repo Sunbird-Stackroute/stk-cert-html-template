@@ -1,1 +1,0 @@
-# Stackroute Certificate Template
