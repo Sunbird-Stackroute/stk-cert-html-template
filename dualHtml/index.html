@@ -14,101 +14,54 @@
         rel="stylesheet"
     >
 </head>
+<style>
+    @import url("https://fonts.googleapis.com/css2?family=Khula&display=swap");
 
-<body>
+    body {
+        font-family: "Khula", sans-serif;
+        margin: 0;
+    }
 
-    <div>
-        <!-- <div class="certificate-main">
+    @media print {
+        @page {
+            size: A4 Portrait;
+            margin: 20px 50px;
+        }
+    }
+</style>
 
-            <div class="emptydiv"></div>
-            <div class="badge-title">
-                <div class="badge-title-flex-container">
+<body style="height: 100vh">
 
-                    <div class="logo">
-                        <img src="./images/gradcap.png">
-                    </div>
+    <section style="background: #f56a4c; height: 350px">
+        <article style="display: flex; justify-content: space-between">
+            <div></div>
+            <img
+                src="./images/gradcap.png"
+                width="155"
+                height="220"
+                alt=""
+                style="position: relative; top: 20px; left: 18px"
+            />
+            <img
+                src="./images/qrcode.png"
+                width="40"
+                height="40"
+                alt=""
+                style="position: relative; top: 20px; right: 20px"
+            />
+        </article>
+        <article style="display: flex; justify-content: center">
+            <img
+                src="./images/title.png"
+                alt=""
+                style="width: 400px; position: relative; top: 25px"
+            />
+        </article>
+    </section>
 
-                    <div class="title">
-                        <img src="images/title.png">
-                    </div>
-
-                </div>
-            </div>
-            <div class="qrcodetopcolumn">
-                <div class="qrcodeImageTop">
-                    <img src="./images/qrcode.png">
-                </div>
-            </div>
-
-        </div> -->
-        <section style="background: #f56a4c; height: 350px">
-            <article style="display: flex; justify-content: space-between">
-                <div></div>
-                <img
-                    src="./images/gradcap.png"
-                    width="155"
-                    height="220"
-                    alt=""
-                    style="position: relative; top: 20px; left: 18px"
-                />
-                <img
-                    src="./images/qrcode.png"
-                    width="40"
-                    height="40"
-                    alt=""
-                    style="position: relative; top: 20px; right: 20px"
-                />
-            </article>
-            <article style="display: flex; justify-content: center">
-                <img
-                    src="./images/title.png"
-                    alt=""
-                    style="width: 400px; position: relative; top: 25px"
-                />
-            </article>
-        </section>
-        <!-- <div class="narrative">
-
-
-            <img src="./images/sr_bg_3.png" />
-
-            <p class="first-text">
-                This is to certify that<br><br>
-                John Doe<br>
-                Has successfully completed the NIIT - Canada 12-week<br>
-                Java Full Stack Development Program on<br>
-                Has successfully completed the NIIT - Canada 12-week<br>
-                Has successfully completed the NIIT - Canada 12-week<br>
-                Has successfully completed the NIIT - Canada 12-week<br>
-                Has successfully completed the NIIT - Canada 12-week<br>
-                Has successfully completed the NIIT - Canada 12-week<br>
-                Has successfully completed the NIIT - Canada 12-week<br>
-                Has successfully completed the NIIT - Canada 12-week<br>
-                Has successfully completed the NIIT - Canada 12-week<br>
-                Has successfully completed the NIIT - Canada 12-week<br>
-                September 10, 2021.<br>
-            </p>
-        </div> -->
-        <!-- <div class="height-100vh center-aligned">
-            <img src="./images/sr_bg_3.png" />
-            <div class="text">This is to certify that<br><br>
-
-                John Doe<br><br>
-                has successfully completed the
-                Post Graduate Program in Full Stack Product Engineering
-                conducted by StackRoute
-                during the period 31 jul 2020 to 26 feb 2021
-                and after due assessment & evaluation by the Academic Council of NIIT,
-                is granted the title Stackroute Certified
-                Full Stack product Engineer in java and Angular technology Stack
-                as of 03 June 2021.
-
-            </div>
-        </div> -->
-
-        <section
-            class="watermark"
-            style="
+    <section
+        class="watermark"
+        style="
           margin: 10px;
           text-align: center;
           position: relative;
@@ -118,23 +71,23 @@
           align-items: center;
           max-height: 100%;
         "
-        >
-            <img
-                src="./images/sr_bg_3.png"
-                width="680"
-                height="255"
-                alt=""
-            />
-            <span style="
+    >
+        <img
+            src="./images/sr_bg_3.png"
+            width="680"
+            height="255"
+            alt=""
+        />
+        <span style="
             position: absolute;
             font-size: clamp(16px, 26px, 30px);
             top: 16px;
           ">
-                <p>This is to certify that</p>
-                <div>
-                    <!-- <p><strong>John Doe</strong> has successfully completed the Java tech stack</p> -->
+            <p>This is to certify that</p>
+            <div>
+                <!-- <p><strong>John Doe</strong> has successfully completed the Java tech stack</p> -->
 
-                    <!-- <p>
+                <!-- <p>
                         <strong>John Doe</strong> has successfully completed the Post
                         Graduate Program in Full Stack Product Engineering conducted by
                         StackRoute during the period 31 jul 2020 to 26 feb 2021 and after
@@ -144,76 +97,52 @@
                             23-September-2020.</strong>
                     </p> -->
 
-                    <strong>John Doe</strong><br> has successfully completed the Java tech
-                    stack
-                    <p>covering UI-Angular-Java Spring-Microservices from</p>
-                    <p>StackRoute on <strong>23-September-2020.</strong></p>
-                    <!-- <p>StackRoute on <strong>23-September-2020.</strong></p> -->
-                </div>
-            </span>
-        </section>
-
-        <!-- <div class="sign-logo-wrapper">
-
-            <div class="stacksignlogo">
-                <div class="sign">
-                    <img src="./images/sign-dir.png">
-
-
-                </div>
-                <div class="company-logo-stack">
-                    <img src="./images/niitlogo.png">
-                </div>
+                <strong>John Doe</strong><br> has successfully completed the Java tech
+                stack
+                <p>covering UI-Angular-Java Spring-Microservices from</p>
+                <p>StackRoute on <strong>23-September-2020.</strong></p>
+                <!-- <p>StackRoute on <strong>23-September-2020.</strong></p> -->
             </div>
-            <div class="qrcodeImage">
-                <img src="./images/qrcode.png">
-            </div>
-            <div class="issuersignlogo">
-                <div class="sign">
-                    <img
-                        src="./images/sign-dir.png"
-                        alt="Sign"
-                    />
+        </span>
+    </section>
 
+    <section style="width:80%;display: flex;justify-content: center;margin: auto;">
+        <div class="qrcodeImage">
+            <img
+                src="./images/qrcode.png"
+                alt=""
+            />
+        </div>
+    </section>
 
-                </div>
-                <div class="company-logo">
-                    <img src="./images/CGILogo.png">
-                </div>
-            </div>
-        </div> -->
-        <section style="width:80%;display: flex;justify-content: center;margin: auto;">
-            <div class="qrcodeImage">
-                <img
-                    src="./images/qrcode.png"
-                    alt=""
-                />
-            </div>
-        </section>
+    <section style="display: flex; flex-direction: row; justify-content:space-between;align-items: center;width:80%; margin:auto;">
+        <div class="company-logo-stack">
+            <p>DJ Chadha</p>
+            <p>Executive Vice President & Global Head, Operations</p>
+            <p>NIIT Learning Solutions Limited (Canada)</p>
+            <img
+                src="./images/niitlogo.png"
+                alt=""
+            />
+        </div>
 
-        <section style="display: flex; flex-direction: row; justify-content:space-between;align-items: center;width:80%; margin:auto;">
-            <div class="company-logo-stack">
-                <img
-                    src="./images/niitlogo.png"
-                    alt=""
-                />
-            </div>
+        <div class="company-logo">
+            <p>Edger Aranha</p>
+            <p>Vice President, Human Resources</p>
+            <img
+                src="./images/CGILogo.png"
+                alt=""
+            />
+        </div>
 
-            <div class="company-logo">
-                <img
-                    src="./images/CGILogo.png"
-                    alt=""
-                />
-            </div>
-
-        </section>
-        <section style="display: flex; justify-content: center;">
-            <small style="margin: 20px; font-size: 9px">
-                Verify from here:
-                <a
-                    href="http://localhost:5000/verify?url=http://localhost:8000/public/assertions/pB4CgdvlQaaZ120VQXrbpg.json?v=1_1">http://localhost:5000/verify?url=http://localhost:8000/public/assertions/pB4CgdvlQaaZ120VQXrbpg.json?v=1_1</a>
-            </small>
-        </section>
+    </section>
+    <section style="display: flex; justify-content: center;">
+        <small style="margin: 10px 0 0 0; font-size: 9px">
+            Verify from here:
+            <a
+                href="http://localhost:5000/verify?url=http://localhost:8000/public/assertions/pB4CgdvlQaaZ120VQXrbpg.json?v=1_1">http://localhost:5000/verify?url=http://localhost:8000/public/assertions/pB4CgdvlQaaZ120VQXrbpg.json?v=1_1</a>
+        </small>
+    </section>
 
     </div>
 

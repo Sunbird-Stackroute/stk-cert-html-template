@@ -328,17 +328,18 @@ hr.sign-line {
 	width: 130%;
 	height: auto;
 }
-.company-logo-stack {
+/* .company-logo-stack {
 	max-width: 130px;
-	/* padding-top: 10px; */
+	padding-top: 10px;
 
-	/* margin-bottom: 20px; */
-	/* margin-left: 5px; */
-	/* border: 1px solid black; */
-}
+	margin-bottom: 20px;
+	margin-left: 5px;
+	border: 1px solid black;
+} */
 .company-logo-stack > img {
 	width: 100%;
 	height: auto;
+	max-width: 130px;
 }
 
 .qrcodeImage {
@@ -358,15 +359,16 @@ hr.sign-line {
 	align-items: flex-end;
 	justify-content: flex-end;
 }
-.company-logo {
+/* .company-logo {
 	max-width: 130px;
-	/* border: 1px solid black; */
-	/* margin-right: 24px;
-	padding-right: 40px; */
-}
+	border: 1px solid black;
+ margin-right: 24px;
+	padding-right: 40px;
+} */
 .company-logo > img {
 	width: 100%;
 	height: auto;
+	max-width: 130px;
 	/* border: 1px solid black; */
 }
 .verify-link {
@@ -413,10 +415,10 @@ hr.sign-line {
 	word-break: break-word;
 }
 
-@page {
+/* @page {
 	size: A4;
 	margin: 10px 40px;
-}
+} */
 
 .height-100vh {
 	/* height: 100vh; */
