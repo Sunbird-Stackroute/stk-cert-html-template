@@ -12,6 +12,8 @@
     body {
       font-family: "Khula", sans-serif;
       margin: 0;
+      display: flex;
+      flex-direction: column;
     }
 
     @media print {
@@ -27,22 +29,13 @@
       z-index: -1;
       left: 0;
       width: 100%;
-      height: 335px;
       top: 0;
     }
   </style>
 
-  <body
-    style="
-      height: 100vh;
-      display: grid;
-      grid-template-rows: auto 1fr auto;
-      grid-template-columns: 1fr;
-      grid-template-areas: 'head' 'body' 'foot';
-    "
-  >
+  <body>
     <!-- Header-->
-    <section style="grid-area: head; background: #0099ff; height: 350px">
+    <section style="background: #0099ff; height: 350px;">
       <article style="display: flex; justify-content: space-between">
         <div></div>
         <!-- StackRoute Logo -->
@@ -81,45 +74,41 @@
     <section
       class="stackroute--foreground__transparent"
       style="
-        grid-area: body;
-        margin: 5px 0 10px 0;
         text-align: center;
         position: relative;
         font-size: 26px;
-        height: 335px;
+        height: 350px;
         display: flex;
         justify-content: center;
         flex-direction: column;
         align-items: center;
-        padding-left: 40px;
-        padding-right: 40px;
+        padding-left: 20px;
+        padding-right: 20px;
       "
     >
-      <!-- <span>
-        This is to certify that <strong>John Doe</strong> has successfully completed the Java tech stack
+      <!-- <p style="position: absolute; height: 350px; margin-bottom: 350px;">
+        This is to certify that <br /><br />
+        <strong>John Doe</strong> <br /> has successfully completed the Java tech stack
         covering UI-Angular-Java Spring-Microservices from StackRoute on <strong>23-September-2020.</strong>
-      </span> -->
+      </p> -->
 
-      <span>
-        This is to certify that <strong>John Doe</strong> <br />
+      <p style="position: absolute; height: 350px; margin-bottom: 350px;">
+        This is to certify that <br /><br /><strong>John Doe</strong> <br />
+        has successfully completed the Post Graduate Program in Full Stack
+        has successfully completed the Post Graduate Program in Full Stack
+        has successfully completed the Post Graduate Program in Full Stack
         has successfully completed the Post Graduate Program in Full Stack
         Product Engineering conducted by StackRoute during the period 31 Jul
         2020 to 26 Feb 2021 and after due assessment & evaluation by the
         Academic Council of NIIT, is granted the title Stackroute Certified Full
         Stack product Engineer in java and Angular technology Stack as of<strong>
-          23-September-2020.</strong>
-      </span>
+          23-September-2020.</strong
+        >
+      </p>
     </section>
 
     <!-- Footer-->
-    <section
-      style="
-        grid-area: foot;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-      "
-    >
+    <section style="display: flex; flex-direction: column; align-items: center; margin-top: 280px;">
       <!-- QR Code -->
       <img
         width="75"

@@ -12,6 +12,8 @@
     body {
       font-family: "Khula", sans-serif;
       margin: 0;
+      display: flex;
+      flex-direction: column;
     }
 
     @media print {
@@ -20,9 +22,18 @@
         margin: 20px 50px;
       }
     }
+
+    .stackroute--foreground__transparent::before {
+      content: url(./assets/images/dual/sr_bg_3.png);
+      position: absolute;
+      z-index: -1;
+      left: 0;
+      width: 100%;
+      top: 0;
+    }
   </style>
 
-  <body style="height: 100vh">
+  <body>
     <!-- Header-->
     <section style="background: #f56a4c; height: 350px">
       <article style="display: flex; justify-content: space-between">
@@ -58,40 +69,43 @@
 
     <!-- Body -->
     <section
-      class="watermark"
+      class="stackroute--foreground__transparent"
       style="
-        margin: 5px 0 10px 0;
         text-align: center;
         position: relative;
+        font-size: 26px;
+        height: 350px;
         display: flex;
+        justify-content: center;
         flex-direction: column;
-        align-content: center;
         align-items: center;
+        padding-left: 20px;
+        padding-right: 20px;
       "
     >
-      <img
-        src="./assets/images/dual/sr_bg_3.png"
-        width="680"
-        height="255"
-        alt=""
-      />
-      <span style="position: absolute; font-size: 26px; top: 16px">
-        <p>This is to certify</p>
-        <section style="line-height: 0.2">
-          <strong>John Doe</strong> has successfully completed the Java tech
-          stack
-          <p>covering UI-Angular-Java Spring-Microservices from</p>
-          <p>StackRoute on <strong>23-September-2020.</strong></p>
-          <!-- <p>
-                <strong>John Doe</strong><br /> has successfully completed the Post Graduate Program in Full Stack
-                Product Engineering conducted by StackRoute during the period 31 jul 2020 to 26 feb 2021 and after due assessment & evaluation by the Academic Council of NIIT, is granted the title Stackroute Certified Full Stack product Engineer in java and Angular technology Stack as of<strong> 23-September-2020.</strong>
-              </p> -->
-        </section>
-      </span>
+      <p style="position: absolute; height: 350px; margin-bottom: 350px;">
+        This is to certify that <br /><br />
+        <strong>John Doe</strong> <br /> has successfully completed the Java tech stack
+        covering UI-Angular-Java Spring-Microservices from StackRoute on <strong>23-September-2020.</strong>
+      </p>
+
+      <!-- <p style="position: absolute; height: 350px; margin-bottom: 350px;">
+        This is to certify that <br /><br /><strong>John Doe</strong> <br />
+        has successfully completed the Post Graduate Program in Full Stack
+        has successfully completed the Post Graduate Program in Full Stack
+        has successfully completed the Post Graduate Program in Full Stack
+        has successfully completed the Post Graduate Program in Full Stack
+        Product Engineering conducted by StackRoute during the period 31 Jul
+        2020 to 26 Feb 2021 and after due assessment & evaluation by the
+        Academic Council of NIIT, is granted the title Stackroute Certified Full
+        Stack product Engineer in java and Angular technology Stack as of<strong>
+          23-September-2020.</strong
+        >
+      </p> -->
     </section>
 
     <!-- Footer-->
-    <section>
+    <section style="display: flex; flex-direction: column; align-content: space-between; margin-top: 200px;">
       <!-- QR Code -->
       <article
         style="display: flex; flex-direction: column; align-items: center"
